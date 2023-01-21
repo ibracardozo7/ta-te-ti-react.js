@@ -35,10 +35,15 @@ body {
   text-align: center;
 }
 
+.board h1 {
+  color: #eee;
+  margin-bottom: 20px;
+}
+
 .board .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
 .turn {
@@ -50,7 +55,8 @@ body {
   border-radius: 10px;
 }
 
-.turn .square {
+.turn .square,
+.winner .square {
   width: 70px;
   height: 70px;
   pointer-events: none;
